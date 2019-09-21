@@ -1,0 +1,102 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+\title{MobiUK19 Symposium Report}
+
+
+\author{\IEEEauthorblockN{Victoria Neumann}
+\IEEEauthorblockA{\textit{School of Computing and Communictions} \\
+\textit{Lancaster University}\\
+Lancaster, UK \\
+v.neumann@lancaster.ac.uk}
+\and
+\IEEEauthorblockN{Rajkarn Singh}
+\IEEEauthorblockA{\textit{School of Informatics} \\
+\textit{University of Edinburgh}\\
+Edinburgh, UK \\
+r.singh@ed.ac.uk}
+\and
+\IEEEauthorblockN{Sarah Clinch}
+\IEEEauthorblockA{\textit{Department of Computer Science} \\
+\textit{Manchester University}\\
+Manchester, UK \\
+sarah.clinch@manchester.ac.uk}
+}
+
+\maketitle
+
+
+
+\section{Introduction}
+We report on the highlights of the 2nd UK Research Symposium on Mobile, Wearable and Ubiquitous Systems (MobiUK’19) which took place from the 1st–2nd July 2019 at the Department of Computer Science, University of Oxford, UK. This year’s symposium attracted 81 participants and featured 28 extended abstract submissions with subsequent presentations from at total of 37 authors from universities across the UK. 
+
+\section{Invited talks}
+
+Seven invited talks were given throughout the symposium, covering a broad range of research topics. First, Suman Banerjee from the University of Wisconsin-Madison kicked-off MobiUK’19 with a talk on “The Roaming Edge (in Smart Cities)”, a mobile sensing platform on the edge deploying mobile sensors for transport analytics. Using their moving sensing platform Trellis, he shared how edge computing can cope with huge amounts of data collected via sensors in and on busses. Questions circulated around the challenges of integrating a 3rd-party application ecosystem on the edge, the lack of situational awareness of sensors, and with regards to ethics, security and privacy. 
+Amanda Prorok from the University of Cambridge showed cutting edge results from her lab around  trajectory planning for autonomous robots. In “When Robots Hit the Road: New Challenges in Multi-Vehicle Coordination”, she discussed the challenges of coordinating robots including the creation of information flows for control components, how to incorporate communication and achieve consensus for assignments. Prorok also talked about data obfuscation for increased privacy using a geo-indistinguishability approach.
+On the second day, Tanzeem Choudhury (Cornell University) gave the talk  “Mindless Computing: Designing Technologies to Subtly Influence Behavior”, which highlighted her lab’s efforts in integrating technology seamlessly into our daily lives. For instance, dining plates with RGB sensors change color based on the colour of food, influencing people to increase/decrease the quantity of food they serve. Discussions revolved around integrating environmental awareness into these technologies and their system’s long-term effectiveness.
+The last invited talk by Romit Choudhury from the University of Illinois at Urbana Champaign was about multi-sensory in-ear wearable computing devices, describing new possibilities such as jaw motion or hollow earphones for better ear-care. His team built a prototype that moved the DSP outside of the headphones so that it can listen to noise much before it reaches the user's ear. They showed considerable decrease in noise levels compared to current Bose state-of-the-art headphones. The talk led to various interesting discussions about the future and challenges in building earable devices, and the limitations of their current headphone model.
+
+
+
+\section{Industry Session}
+
+Next to academic contributions, this year’s symposium included an industry session in which some of the sponsors shared new developments and projects with the research community. First, Markus Hoffmann from Nokia Bell Labs started his talk “Creating a Reality Beyond the Real” by describing his vision of a multi-sensory future where use of technology is innate in our natural lifestyle rather than being a hindrance. In one such application, his team is working with Alex Thomson, a British yachtsman, to develop devices and a framework that can understand the state of our physical and mental well-being without us having to actively interact with the device. Participants hinted at potential risks of integrated technologies collecting lots of personal data, voicing privacy concerns and explored possible solutions i.e., potential data ownerships via government regulations or technology hierarchies.
+Andrew Mundy from ARM discussed challenges and opportunities of running “Machine Learning on the Edge” in contrast to the central cloud. He emphasized that running Deep Neural Net based inferences on the edge are challenging due to its limited resources. The heterogeneity in edge infrastructure is another challenge as most are owned by multiple manufacturers running their proprietary APIs. Mundy mentioned that ARM is interested in leveraging the existing frameworks like TensorFlow, PyTorch to build solutions on top of it citing FixyNN as an example.
+Finally, Justin Philips from Google talked about “The Challenge of Continuous Heart Rate Monitoring from Wearables” where he described the mechanism used for monitoring the heart rate measurement (HRM) using Photoplethysmograph (PPG). Google Fit platform has also integrated other device sensors like Inertial Measurement Unit with PPG to reduce HRM error rate. The talk led to lively follow-up discussions to understand reasons of degradation in HRM quality, range of degradation, and how would skin colour affect their technique? 
+
+
+
+\section{Conference Paper Sessions Highlights}
+
+The presentations of the five paper sessions spanned a range of domains and themes with one major research trend around the theme of Machine Learning (ML) was clearly visible.  
+
+\subsection{Machine Learning}
+
+With a total of nine long and two short presentations, the theme of ML was covering two sessions Two talks covered issues around developing On-Device Deep Learning with limited resources e.g., memory constraint environments such as microcontrollers and mobile devices. One was presented by , one by Javier Fernández-Marqués et al. and another by Valentin Radu. 
+Other talks related to ML covered analysing audio sensors for social sensing with the goal to identify speakers with only one smartphone by compressing audio that produces a compressed representation which is able to recognise voices of known and new speakers. Applications envisioned by the researchers are  support for autistic persons to analyze their social interactions, but privacy issues still need exploration. 
+Privacy was also discussed in an automatic data summarisation methodology talk by Dionysis Manousakas et al. that combined Bayesian coreset models and differential privacy to allow for scalable data analysis and the reduction of inference cost. Also using Bayesian models was the team of Gautham Krishna Gudur et al. proposing their ActiveHARNet approach, that combines Bayesian deep learning with Human Activity Recognition solving the issue of unlabeled data with only a few data points. 
+Finally, Haoyu Liu from Edinburgh University presented an investigation of the security of Belkin Smart Home devices WeMo finding an exploit that allows for WiFi passphrase leakage making the devices vulnerable to phishing attacks. 
+
+
+\subsection{Security \& Privacy}
+
+The session on security and privacy included five talks: Michael Dodson et al. conducted a longitudinal study  of 50,000 Internet-connected industry control systems (ICS) without access control introducing a model to fingerprint unsecured, Internet-connected ICS (Robotic arms, conveyor belts, pulps, etc). During the discussion, the authors were asked if they know of tailored mass attacks, but most are initiated on traditional ways e.g., Stuxnet. 
+Diana Vasile et al. highlighted other security issues around key authenticity in secure mobile messaging. Problematizing how key management is not done by users alone, she explained how key serves are vulnerable to ghost user attacks. Their solution was an advanced notification system that gathers more contextual information such as employing goshipping to establish trust and confirming keys automatically. 
+Beatrice Perez et al. explored if and how mobile devices can be traced and identified via their electromagnetic emissions. They experimented with two kinds of attacks. First, internal (app-based) attacks in which approximately ten data points were needed to identify single device with 98.9\% accuracy. Second, external (proximity-based) attacks which also resulted in the identification rate of single devices of 96.7\%.
+Lastly, Nigel Davies was talking about the design and implementation of an enhanced privacy mediator approach to privacy protection in IoT-rich environments combining mobile technology and Cloudlets. 
+
+
+\subsection{Sensing -- Algorithms and Applications }
+
+In this session, four long and two short talks were presented. Jiexin Zhang et al. developed an approach, SensorID, to calibrate smart device sensors without the danger of uniquely identifying a specific device. Based on Gain Matrix Estimation and the sensor outputs, their approach produces globally unique fingerprints for iOS devices. It was pleasing to see a demonstration of research impact in SensorID -- Apple have adopted their suggestion of adding noise and have also removed sensor access by default in Mobile Safari.
+Andrea Ferlini et al. provided insights of their work with Nokia Bell Labs on Multimodal Learning algorithms which enables in-ear hearing devices to leverage multiple inputs such as audio, head movements, eye movements and so forth. They provide a real-time solution in a resource constrained environment in order to reduce the cocktail-party problem.
+Catherine Tong presented their team’s work on ML to model the data from 198 Multiple Sclerosis (MS) patients’ connected health and wellness devices (smartwatch, weighing scale, sleep tracker) to predict patients self-reported fatigue and health state scores for six months. Their solution is based on an ensemble of modality-specific AdaBoost regressors, which handles the issues of multimodal and missing data elegantly. 
+Jittrapol Intarasirisawat et al. were tackling how to use game-based assessments for early detection of cognitive decline such as dementia. They integrated their solution into existing mobile games like Tetris, Fruit Ninja and found that device touch (swipe speed, length) and motion are significantly correlated with cognitive performance.
+
+
+\subsection{Mobile Data}
+
+This session consisted of 4 long and 2 short presentations. Jovan Powar et al. posed privacy-preserving data publishing as a risk management problem using concept of linkability, which forms the basis of their novel threat modelling approach. He remarked that the dependency of their approach on the source of data has not been explored yet. 
+Apinan Hasthanasombat et al. talked about how one can answer explanatory questions from mobile data e.g., how the existence of a venue would affect footfall or health outcome in this area. They employ causal inference methodology to deal with the mobile data since it is observational in nature rather than coming from a controlled environment. 
+Matteo Varvello et al. talked about how energy measurements can be performed on mobile devices with high accuracy exclaiming that currently both hardware and software based solutions have limitations in terms of accuracy or are expensive. 
+Rajkarn Singh et al. described how people’s mobile app usage habits are strongly correlated with the demography of the place. Their study found that urban areas are more dominated by apps like WhatsApp, Netflix, and blogging. By contrast, rural areas saw more traffic coming from background OS updates and streaming dominated by Windows phones. Participants enquired about their clustering approach and the use of mutual information metric.
+
+
+\section{Conclusion}
+
+This second edition of MobiUK touched many different aspects of mobile computing and attracted faculty, researchers, innovators and students from all stages of their careers. We’re looking forward to next year’s MobiUK symposium, chaired by Prof. Mirco Musolesi taking place at University College London. 
+
+
+
+\end{document}
